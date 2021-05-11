@@ -25,3 +25,8 @@ type Event struct{
 	From		int `json:"from"`
 	Due			int `json:"due"`
 }
+
+type TasksResponse struct{
+	Tasks	[]Task `json:"tasks"`
+	Error	string `json:"error"`
+}
